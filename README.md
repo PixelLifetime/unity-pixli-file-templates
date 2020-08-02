@@ -28,3 +28,5 @@ This is the package layout convention followed by official Unity packages:
   └── Documentation~
        └── [YourPackageName].md
 ```
+
+TODO: add support for namespace settings to each file.
