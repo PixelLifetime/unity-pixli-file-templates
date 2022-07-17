@@ -1,0 +1,30 @@
+/* Created by Max.K.Kimo */
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Events;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+using TMPro;
+
+namespace Kimo.Assistance
+{
+	[AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
+	public class #SCRIPTNAME# : Attribute
+	{
+		public #SCRIPTNAME#()
+		{
+			
+		}
+
+#if UNITY_EDITOR
+#endif
+	}
+}

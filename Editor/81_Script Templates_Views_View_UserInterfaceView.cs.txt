@@ -1,0 +1,55 @@
+/* Created by Max.K.Kimo */
+
+using System.Collections;
+using System.Collections.Generic;
+
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Events;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+using Kimo.Assistance;
+using Kimo.Assistance.UTILITY;
+
+using TMPro;
+
+namespace Kimo.Core
+{
+	public class #SCRIPTNAME# : UserInterfaceView<#SCRIPTNAME#.#SCRIPTNAME#DisplayData, #SCRIPTNAME#.#SCRIPTNAME#Output>
+	{
+		public override void Display(#SCRIPTNAME#DisplayData displayData)
+		{
+			throw new System.NotImplementedException();
+		}
+
+		[System.Serializable]
+		public class #SCRIPTNAME#DisplayData : UserInterfaceViewDisplayData
+		{
+		}
+
+		[System.Serializable]
+		public class #SCRIPTNAME#Output : UserInterfaceViewOutput
+		{
+		}
+
+#if UNITY_EDITOR
+		//protected override void OnDrawGizmos()
+		//{
+		//}
+#endif
+	}
+}
+
+namespace Kimo.Core.UTILITY
+{
+#if UNITY_EDITOR
+	[CustomEditor(typeof(#SCRIPTNAME#))]
+	[CanEditMultipleObjects]
+	public class #SCRIPTNAME#Editor : UserInterfaceViewEditor<#SCRIPTNAME#>
+	{
+	}
+#endif
+}

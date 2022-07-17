@@ -1,0 +1,30 @@
+/* Created by Max.K.Kimo */
+
+using System.Collections;
+using System.Collections.Generic;
+
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Events;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+using Kimo.Assistance;
+using Kimo.Assistance.UTILITY;
+
+using TMPro;
+
+namespace Kimo.Core
+{
+	public static class #SCRIPTNAME#
+	{
+		public static (this )
+		{
+		}
+
+#if UNITY_EDITOR
+#endif
+	}
+}

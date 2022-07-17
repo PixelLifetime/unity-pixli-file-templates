@@ -1,0 +1,4 @@
+*.meta
+!*.asset.meta
+!*.mixer.meta
+!@*.meta

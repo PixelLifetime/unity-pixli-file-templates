@@ -1,0 +1,44 @@
+/* Created by Max.K.Kimo */
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Events;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+using TMPro;
+
+namespace Kimo.Assistance
+{
+	[AttributeUsage(AttributeTargets.Field, Inherited = true, AllowMultiple = false)]
+	public class #SCRIPTNAME# : MultiSupportPropertyAttribute
+	{
+		public #SCRIPTNAME#()
+		{
+		}
+
+		public #SCRIPTNAME#(bool drawMain) : base(drawMain)
+		{
+		}
+
+#if UNITY_EDITOR
+#endif
+	}
+}
+
+namespace Kimo.Assistance.UTILITY
+{
+#if UNITY_EDITOR
+	[CustomPropertyDrawer(typeof(#SCRIPTNAME#))]
+	[CanEditMultipleObjects]
+	public class #SCRIPTNAME#Drawer : MultiSupportPropertyAttributeDrawer
+	{
+	}
+#endif
+}
