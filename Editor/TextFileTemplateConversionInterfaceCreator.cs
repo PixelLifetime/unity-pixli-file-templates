@@ -22,7 +22,7 @@ namespace PixLi
 		public static void Create()
 		{
 			DirectoryInfo directoryInfo = Directory.CreateDirectory(
-				PathUtility.GetScriptFileDirectoryPath()
+				Path.Combine(PathUtility.ASSETS_PATH_NAME, PathUtility.GetScriptFileDirectoryPath())
 			);
 
 			using (StreamWriter streamWriter = new StreamWriter(
